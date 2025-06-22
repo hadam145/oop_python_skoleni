@@ -1,4 +1,7 @@
-class Zvire:
+from abc import abstractmethod, ABC
+
+
+class Zvire(ABC):
 
     def __init__(self, hmotnost):
         self._hmotnost = hmotnost
@@ -11,8 +14,9 @@ class Zvire:
         self._hmotnost += jidlo
 
     #Vraci zvuk ( prazdny retezec)
+    @abstractmethod
     def vrat_zvuk(self):
-        return ""
+        pass
 
     #Magicka metoda pro vypis instance do konzole (prevod na text)
     #Vypisuje typ tridy podle instance
