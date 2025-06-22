@@ -1,9 +1,17 @@
-from kalkulacka import Kalkulacka
+import copy
+
 from lide.clovek import Clovek
-from lide.jazyk import Jazyk
 
-jazyk = Jazyk.CSHARP
+adam = Clovek("Adam",100)
 
-jazyk = jazyk.JAVA
+tomas = Clovek("Tomas",20)
 
-print(Jazyk.JAVA.value)
+tomas = adam
+
+pepa = copy.copy(adam)
+
+print(pepa.pozdrav())
+
+if adam is tomas:
+    print("stejne")
+

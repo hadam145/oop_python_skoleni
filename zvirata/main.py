@@ -1,10 +1,11 @@
 from zvirata.kachna import Kachna
 from zvirata.kocka import Kocka
 from zvirata.pes import Pes
+from zvirata.zbarveni import Zbarveni
 from zvirata.zvire import Zvire
 
-zviratko = Zvire(10)
-kocka = Kocka(15,"Ruzova")
+# zviratko = Zvire(10)
+kocka = Kocka(15, Zbarveni.MODRE)
 lady_gaga = Kachna(70,True)
 pes = Pes(2,False)
 
@@ -13,7 +14,7 @@ zvirata = [
     kocka,
     lady_gaga,
     pes,
-zviratko
+# zviratko
 ]
 
 #Vypsani instance do konzole (vola se __str__

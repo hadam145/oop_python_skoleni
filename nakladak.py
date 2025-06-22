@@ -16,7 +16,7 @@ class Nakladak:
             self._naklad += hmotnost
             print(f"Nalozil jsem {hmotnost} kilogramu")
         else:
-            print("Nelze nalozit vic, prekrocil jsi nosnost")
+            raise Exception("Nelze nalozit vic, prekrocil jsi nosnost")
 
 
     def vyloz(self,hmotnost):
@@ -24,7 +24,7 @@ class Nakladak:
             self._naklad -= hmotnost
             print(f"Vylozil jsem {hmotnost} kilogramu")
         else:
-            print(f"Nelze vylozit {hmotnost} kilogramu")
+            raise Exception(f"Nelze vylozit {hmotnost} kilogramu")
 
 
     def vypis(self):
